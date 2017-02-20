@@ -1,0 +1,4 @@
+node {
+  stage 'Run JMeter Test'
+  sh '/Users/vinothsukumaran/apache-jmeter-3.1/bin/jmeter.sh -n -t /Users/vinothsukumaran/AIGDemo.jmx -l test.jtl'
+}
