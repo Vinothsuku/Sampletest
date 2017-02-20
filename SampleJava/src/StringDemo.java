@@ -6,11 +6,14 @@ public class StringDemo {
 		
 		String str1 = "Hello";
 		
-		String str2 = " World First";
+		String str2 = " World";
 		
 		String stradd = str1 + str2;
 		
 		System.out.println(stradd);
+		
+		System.out.println("End of class");
+
 	}
 
 }
