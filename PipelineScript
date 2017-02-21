@@ -1,10 +1,10 @@
 node {
-   stage 'Build Application'
-   // do what you need to do to build your application
-   echo 'Compilation is done'
-   stage 'Deploy Application'
-   // do what you need to do to deploy your application
+   stage 'Stage 1: Build Application'
+   // Building application
+   echo 'Compilation is complete'
+   stage 'Stage 2: Deploy Application'
+   // Deploying application
    echo 'Deployment is complete'
-  stage 'Run JMeter Test'
+  stage 'Stage X: Run JMeter Test'
   sh '/Users/Shared/Jenkins/apache-jmeter-3.1/bin/jmeter -n -t /Users/Shared/Jenkins/AIGHome.jmx -l test.jtl'
 }
